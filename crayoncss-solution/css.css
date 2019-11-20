@@ -1,0 +1,55 @@
+* { box-sizing: border-box; }
+body { margin-top: 20px; }
+header { text-align: center; }
+.Chicken, .Beef, .Sushi {
+	background-color: gray;
+	color: black;
+	position: relative;
+	border: 1px solid black;
+	margin: 20px 10px 0px 10px;
+}
+#Chicken, #Beef, #Sushi {
+	position: absolute;
+	right: 0;
+	width: 100px;
+	text-align: center;
+	border-bottom: 1px solid black;
+	border-left: 1px solid black;
+}
+#Chicken {
+	background-color: pink;
+	color: black;
+}
+#Beef {
+	background-color: red;
+	color: black;
+}
+#Sushi {
+	background-color: yellow;
+	color: black;
+}
+.Chicken p, .Beef p, .Sushi p {
+	padding: 10px 20px;
+}
+@media only screen and (max-width: 600px) {
+	.Chicken, .Beef, .Sushi {
+		width: 100%;
+		display: block;
+	}
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+	.Chicken, .Beef {
+		width: 47%;
+		display: inline-block;
+	}
+	.Sushi {
+		width: 97%;
+		display: block;
+	}
+}
+@media only screen and (min-width: 992px) {
+	.Chicken, .Beef, .Sushi {
+		width: 30%;
+		display: inline-block;
+	}
+}
